@@ -14,13 +14,11 @@
     <link rel="stylesheet" href="css/cadastrar.css">
 
     <script src="js/variaveis.js"      defer></script>
-    <script src="js/funcoes.js"        defer></script>
-    <script src="js/select.js"         defer></script>
-    <script src="js/preencheTabela.js" defer></script>
-    <script src="js/get.js"            defer></script>
-    <script src="js/post.js"           defer></script>
-    <script src="js/alterar.js"        defer></script>
-    <script src="js/remover.js"        defer></script>
+    <script src="js/functions.js"      defer></script>
+    <script src="js/table.js"          defer></script>
+    <script src="js/postmethod.js"     defer></script>
+    <script src="js/selectbutton.js"   defer></script>
+
 
     <title>Cadastrar Produtos</title>
 </head>
@@ -28,9 +26,9 @@
 <body>
     <h1>CADASTRAR</h1>
     <form enctype="multipart/form-data">
-        <input type="text"   name="id"        id="id"  class="visually-hidden">
+        <input type="number"   name="id"        id="id"  class="visually-hidden">
         <input type="file"   name="img"       id="img" class="form-control">
-        <input type="text"   name="descricao" id="descricao" placeholder="Descrição do produto" class="form-control">
+        <input type="text"   name="descri" id="descricao" placeholder="Descrição do produto" class="form-control">
         <input type="number" name="preco"     id="preco"     placeholder="Preço do produto"     class="form-control">
 
         <div class="inputs">
@@ -59,7 +57,7 @@
             </tr>
         </thead>
         <tbody>
-
+            
         </tbody>
     </table>
 </body>
