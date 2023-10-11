@@ -1,0 +1,140 @@
+body {
+    background-color: #ebebeb;
+}
+
+.prod {
+    margin: 20px 230px; 
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.header-prod {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul, ol {
+    display: flex;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.info {
+    display: flex;
+}
+
+.imgs {
+    padding: 20px 20px 20px 60px;
+    display: flex;
+}
+
+.little-imgs {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    gap: 10px;
+}
+
+.info-prod {
+    background-color: #333;
+    margin: 10px;
+    padding: 0 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.big-img {
+    width: 38vw;
+    padding: 20px;
+}
+
+.big-img img {
+    width: 100%;
+}
+
+.clock {
+    flex: 0.2;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px 0;
+}
+
+.header-info-prod {
+    display: flex; 
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.text-header-info-prod {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-header-info-prod p{
+    color: #e95012;
+}
+
+.text-header-info-prod span {
+    color: white;
+}
+
+.time-header-info-prod {
+    flex: 1;
+    display: flex;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-header-info-prod p{
+    color: white;
+}
+
+.quant-desc {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.valorProm {
+    padding: 0 5px;
+    color: white;
+}
+
+.num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    background-color: #000;
+    width: 12vw;
+    height: 4vh;
+    color: #ff5800;
+    text-shadow: 0 0 25px #ff5800, 0 0 18px #ff5800;
+}
