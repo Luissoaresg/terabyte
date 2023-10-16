@@ -30,6 +30,11 @@ public class ProdutoController {
         return pr.findAll();
     }
 
+    @GetMapping("/pagcompra/{id}")
+    public ProdutoModel getProd(@PathVariable Integer id){
+        return pr.findById(id).orElse(null);
+    }
+
     private byte[] imagem(Integer id) {
         Optional<ProdutoModel> produto = pr.findById(id);
         return produto.orElse(null).getImg();

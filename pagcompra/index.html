@@ -8,11 +8,12 @@
     <link rel="shortcut icon" href="https://img.terabyteshop.com.br/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/carrossel.css">
-    <link rel="stylesheet" href="css/pagcompra.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/carrossel.css">
+    <link rel="stylesheet" href="pagcompra.css">
     <script src="js/carrossel.js" defer></script>
+    <script src="pagcompra.js" defer></script>
     <title>Terabyte</title>
 </head>
 
@@ -41,7 +42,7 @@
 
     <header>
         <i class="fa-sharp fa-solid fa-bars"></i>
-        <img src="img/terabyte-logo.svg" alt="Logo" class="img-header">
+        <img src="../img/terabyte-logo.svg" alt="Logo" class="img-header">
         <div class="div-input-header">
             <input class="input-header" type="text" placeholder="Pesquise o seu produto">
             <div class="icon-search">
@@ -57,7 +58,7 @@
 
     <div class="carousel-container">
         <div class="carousel">
-            <img src="img/banners/cadeira.jpg" alt="Imagem 1">
+            <img src="../img/banners/cadeira.jpg" alt="Imagem 1">
         </div>
     </div>
 
@@ -71,10 +72,10 @@
                 </ol>
             </div>
             <div class="contato">
-                <ul>
-                    <li><span class="fa-brands fa-whatsapp" style="color: #03c423;"></span></li>
-                    <li><i class="fa-regular fa-envelope" style="color: #e2031a;"></i></li>
-                    <li><i class="fa-regular fa-heart" style="color: #e2031a;"></i></li>
+                <ul class="icons">
+                    <li><span class="fa-top fa-brands fa-whatsapp" style="color: #03c423;"></span></li>
+                    <li><i class="fa-top fa-regular fa-envelope" style="color: #e2031a;"></i></li>
+                    <li><i class="fa-top fa-regular fa-heart" style="color: #e2031a;"></i></li>
                 </ul>
             </div>
         </div>
@@ -82,16 +83,16 @@
         <div class="info">
             <div class="imgs">
                 <div class="little-imgs">
-                    <img src="img/cadeira/cadeira1.jpg" alt="">
+                    <!-- <img src="img/cadeira/cadeira1.jpg" alt="">
                     <img src="img/cadeira/cadeira2.jpg" alt="">
                     <img src="img/cadeira/cadeira3.jpg" alt="">
                     <img src="img/cadeira/cadeira4.jpg" alt="">
                     <img src="img/cadeira/cadeira5.jpg" alt="">
-                    <img src="img/cadeira/cadeira6.jpg" alt="">
+                    <img src="img/cadeira/cadeira6.jpg" alt=""> -->
                 </div>
 
                 <div class="big-img">
-                    <img src="img/cadeira/cadeira1.jpg">
+                    <!-- <img src="img/cadeira/cadeira1.jpg"> -->
                 </div>
             </div>
 
@@ -131,7 +132,9 @@
                         </li>
                     </ul>
 
-                    <h1 class="titulo-prod">Cadeira Gamer SuperFrame Cleric, Reclinável, 4D, Branco e Preto</h1>
+                    <h1 class="titulo-prod">
+                        <!-- Cadeira Gamer SuperFrame Cleric, Reclinável, 4D, Branco e Preto -->
+                    </h1>
 
                     <div class="code">
                         CÓD: Cleric
@@ -158,35 +161,48 @@
                         <div class="preco-pix">
                             <i class="fa fa-solid fa-barcode" style="color: #777;"></i>
                             <div class="info-preco-pix">
-                                <p class="precode">De: <s>R$ 1.999,00</s> por:</p>
-                                <p id="valor">R$ 799,00</p>
+                                <p class="precode">De: <s>
+                                    <!-- R$ 1.999,00 -->
+                                </s> por:</p>
+                                <p id="valor">
+                                    <!-- R$ 799,00 -->
+                                </p>
                                 <p>à vista com 15% de desconto no boleto ou pix</p>
                             </div>
                         </div>
-                        
+
                         <div class="margem2"></div>
 
-                        <div class="preco-cartao">
-                            <i class="fa fa-solid fa-credit-card" style="color: #777;"></i>
-                            <div class="info-preco-card">
-                                <p class="value" id="valor-card">R$ 940,00</p>
-                                <p class="info-preco-card">
-                                    <span class="value">12x</span>
-                                    de
-                                    <span class="value">R$ 78,33</span>
-                                    sem juros no cartão <br>
-                                </p>
+                        <div class="preco-parcela">
+                            <div class="preco-cartao">
+                                <i class="fa fa-solid fa-credit-card" style="color: #777;"></i>
+                                <div class="info-preco-card">
+                                    <p class="value" id="valor-card">
+                                        <!-- R$ 940,00 -->
+                                    </p>
+                                    <p class="info-preco-card">
+                                        <span class="value">12x</span>
+                                        de
+                                        <span id="value-span" class="value">
+                                            <!-- R$ 78,33 -->
+                                        </span>
+                                        sem juros no cartão <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="desparc">
+                                <span>ou 6x sem juros</span>
+                            </div>
+
+                            <div class="parcela"><i class="fa-solid fa-plus" style="color: #ffffff;"></i> VER
+                                PARCELAMENTO
                             </div>
                         </div>
-                        <div class="desparc">
-                            <span>ou 6x sem juros</span> 
-                        </div>
-                        
-                        <div class="parcela"><i class="fa-solid fa-plus" style="color: #ffffff;"></i> VER PARCELAMENTO</div>
-
-                        <div class="button"></div>
-
                     </div>
+                    <button class="btn">
+                        Comprar com desconto
+                        <i class="fa-solid fa-cart-arrow-down" style="color: #ffffff;"></i> 
+                    </button>
                 </div>
 
             </div>

@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #ebebeb;
 }
@@ -28,9 +31,20 @@ ol {
 
 a {
   text-decoration: none;
-  color: orange;
+  color: #e95012;
   font-weight: bold;
   font-size: 1em;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.fa-top {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .info {
@@ -51,11 +65,11 @@ a {
 
 .info-prod {
   background-color: #333;
-  margin: 10px;
+  margin: 10px 0;
   padding: 0 10px 20px;
   border-radius: 10px;
   width: 100%;
-  max-height: 650px;
+  max-height: 660px;
 }
 
 .big-img {
@@ -244,6 +258,10 @@ a {
   color: #eeee;
 }
 
+.preco-parcela {
+  margin: 25px 0 20px;
+}
+
 .preco-cartao {
   display: flex;
   color: #eeee;
@@ -278,9 +296,37 @@ a {
   font-size: 12px;
   padding: 0 0 0 40px;
   color: #eeee;
+  margin-bottom: 20px;
 }
 
 .parcela i {
   padding: 0 5px 0 0;
   font-weight: 900;
+}
+
+.btn   {
+  background: #73c300;
+  color: #ebebeb;
+  font-size: 18px;
+  padding: 0;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  margin: 50px 0 0;
+  width: 100%;
+  position: relative;
+  height: 45px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  border: 1px solid transparent;
+}
+
+.info-prod .btn i {
+  right: 0;
+  position: absolute;
+  padding: 0 10px;
+  font-size: 20px;
+  opacity: 1;
 }

@@ -1,11 +1,11 @@
 function getdados() {
   fetch("http://localhost:8080/")
-    .then((response) => response.json())
-    .then((produto) => inputSite(produto));
+    .then(response => response.json())
+    .then(produtos => inputSite(produtos));
 }
 
-function inputSite(produto) {
-  produto.forEach((p) => {
+function inputSite(produtos) {
+  produtos.forEach((p) => {
     if (p.tipo == 1) {
       document.getElementById("mais-vendidos").appendChild(insertProd(p));
     } else if (p.tipo == 2) {
@@ -20,7 +20,13 @@ function insertProd(p) {
 
   var img = document.createElement("img");
   img.src = "data:img/jpg;base64," + p.img;
-  divProduto.appendChild(img);
+  var link = document.createElement("a");
+  link.setAttribute("href", "/pagcompra/?id=" + p.id);
+  link.setAttribute("target", "_blank");
+  link.appendChild(img);
+  divProduto.appendChild(link);
+  // divProduto.appendChild(img);
+
 
   var TextDescri = document.createElement("p");
   TextDescri.classList.add("p-descri-produto");
@@ -36,7 +42,7 @@ function insertProd(p) {
   text2.classList.add("p-a-vista");
   text2.innerHTML =
     "R$" +
-    (p.preco * 0, 5).toFixed(2) +
+    (p.preco * 0.5).toFixed(2) +
     '<span class="span-a-vista">à vista</span>';
   divProduto.appendChild(text2);
 
