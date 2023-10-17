@@ -1,0 +1,54 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #222222;
+}
+
+form,
+h1, h2 {
+    width: 50%;
+    margin: auto;
+}
+
+h1, h2 {
+    color: aliceblue;
+    text-align: center;
+    padding: 20px 0;
+}
+
+input {
+    margin: 20px 0;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+table {
+    font-size: 20px;
+}
+
+img {
+    width: 250px;
+}
+
+td {
+    vertical-align: middle;
+}
+
+/* 
+.inputs{
+    display: flex;
+} */
+
+.inputs label {
+    color: aliceblue;
+    /*     padding-top: 15px;
+    padding: 15px 10px 0 10px; */
+}

@@ -6,8 +6,8 @@ body {
 }
 
 .prod {
-  margin: 20px 230px;
-  padding: 10px;
+  margin: 20px 251.5px;
+  padding: 10px 15px;
   background-color: white;
   border-radius: 5px;
 }
@@ -49,6 +49,7 @@ a {
 
 .info {
   display: flex;
+  justify-content: space-between;
 }
 
 .imgs {
@@ -68,8 +69,8 @@ a {
   margin: 10px 0;
   padding: 0 10px 20px;
   border-radius: 10px;
-  width: 100%;
-  max-height: 660px;
+  max-height: 725px;
+  width: 42%;
 }
 
 .big-img {
@@ -182,14 +183,13 @@ a {
 
 .titulo-prod {
   color: white;
-  font-size: 18px;
-  font-weight: 400;
+  font: 22px "Open Sans",Arial,Helvetica,sans-serif;
 }
 
 .code {
   margin-top: 4px;
   color: #777;
-  font-size: 11px;
+  font: 14px "Open Sans",Arial,Helvetica,sans-serif;
 }
 
 .margem {
@@ -197,7 +197,7 @@ a {
 }
 
 .vendedor-prod {
-  font-size: 12px;
+  font: 14px "Open Sans",Arial,Helvetica,sans-serif;
   color: #999;
   margin: 10px 0 0 0;
 }
@@ -212,18 +212,18 @@ a {
 
 .info-entrega {
   color: #00a000;
-  font-size: 12px;
+  font: 14px "Open Sans",Arial,Helvetica,sans-serif;
 }
 
 .avaliacao {
   color: #f2c832;
-  font-size: 20px;
+  font: 24px "Open Sans",Arial,Helvetica,sans-serif;
   margin-top: 10px;
 }
 
 .avaliacao span {
   color: #777;
-  font-size: 12px;
+  font: 14px "Open Sans",Arial,Helvetica,sans-serif;
 }
 
 .info-precos-prod {
@@ -247,14 +247,14 @@ a {
 #valor {
   color: #73c300;
   font-weight: 800;
-  font-size: 30px;
+  font: 800 30px "Open Sans Bold",Arial,Helvetica,sans-serif;
   text-align: left;
   margin-top: -6px;
   letter-spacing: -2px;
 }
 
 .info-preco-pix p {
-  font-size: 12px;
+  font-size: 15px;
   color: #eeee;
 }
 
@@ -273,7 +273,7 @@ a {
 }
 
 .info-preco-card {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 #valor-card {
@@ -286,14 +286,14 @@ a {
 }
 
 .desparc {
-  font-size: 12px;
+  font-size: 15px;
   color: #eeee;
   margin: 5px 0 10px 0;
   padding: 0 0 0 40px;
 }
 
 .parcela {
-  font-size: 12px;
+  font-size: 15px;
   padding: 0 0 0 40px;
   color: #eeee;
   margin-bottom: 20px;

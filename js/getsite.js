@@ -20,13 +20,12 @@ function insertProd(p) {
 
   var img = document.createElement("img");
   img.src = "data:img/jpg;base64," + p.img;
+  img.classList.add("div-img-produto");
   var link = document.createElement("a");
   link.setAttribute("href", "/pagcompra/?id=" + p.id);
   link.setAttribute("target", "_blank");
   link.appendChild(img);
   divProduto.appendChild(link);
-  // divProduto.appendChild(img);
-
 
   var TextDescri = document.createElement("p");
   TextDescri.classList.add("p-descri-produto");
