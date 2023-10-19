@@ -23,7 +23,7 @@ import br.com.terabyte.repository.ProdutoRepository;
 public class ProdutoController {
 
     @Autowired
-    ProdutoRepository pr;
+    public ProdutoRepository pr;
 
     @GetMapping
     private Iterable<ProdutoModel> get() {

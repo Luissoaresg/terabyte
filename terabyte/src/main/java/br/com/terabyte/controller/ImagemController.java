@@ -19,7 +19,7 @@ import br.com.terabyte.repository.ImagemRepository;
 public class ImagemController {
     
     @Autowired
-    ImagemRepository ir;
+    public ImagemRepository ir;
 
     @GetMapping("/imgsCad/{id}")
     public ImagemModel getImgs(@PathVariable Integer id){
