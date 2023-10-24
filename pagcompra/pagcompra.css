@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: #ebebeb;
 }
@@ -10,6 +11,27 @@ body {
   padding: 10px 15px;
   background-color: white;
   border-radius: 5px;
+}
+
+#shop-cart {
+  transition: right .5s ease;
+  right: -30em;
+}
+
+#shop-cart.block {
+  transition: right .5s ease;
+  right: 0;
+}
+
+.body-shop.block {
+  background: rgba(0,0,0,.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  transition-duration: .45s,0s;
 }
 
 .header-prod {
@@ -183,13 +205,13 @@ a {
 
 .titulo-prod {
   color: white;
-  font: 22px "Open Sans",Arial,Helvetica,sans-serif;
+  font: 22px "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .code {
   margin-top: 4px;
   color: #777;
-  font: 14px "Open Sans",Arial,Helvetica,sans-serif;
+  font: 14px "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .margem {
@@ -197,7 +219,7 @@ a {
 }
 
 .vendedor-prod {
-  font: 14px "Open Sans",Arial,Helvetica,sans-serif;
+  font: 14px "Open Sans", Arial, Helvetica, sans-serif;
   color: #999;
   margin: 10px 0 0 0;
 }
@@ -212,18 +234,18 @@ a {
 
 .info-entrega {
   color: #00a000;
-  font: 14px "Open Sans",Arial,Helvetica,sans-serif;
+  font: 14px "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .avaliacao {
   color: #f2c832;
-  font: 24px "Open Sans",Arial,Helvetica,sans-serif;
+  font: 24px "Open Sans", Arial, Helvetica, sans-serif;
   margin-top: 10px;
 }
 
 .avaliacao span {
   color: #777;
-  font: 14px "Open Sans",Arial,Helvetica,sans-serif;
+  font: 14px "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .info-precos-prod {
@@ -247,7 +269,7 @@ a {
 #valor {
   color: #73c300;
   font-weight: 800;
-  font: 800 30px "Open Sans Bold",Arial,Helvetica,sans-serif;
+  font: 800 30px "Open Sans Bold", Arial, Helvetica, sans-serif;
   text-align: left;
   margin-top: -6px;
   letter-spacing: -2px;
@@ -304,7 +326,7 @@ a {
   font-weight: 900;
 }
 
-.btn   {
+.btn {
   background: #73c300;
   color: #ebebeb;
   font-size: 18px;
